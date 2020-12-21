@@ -43,7 +43,7 @@ let s:none = [ 'NONE', 'NONE' ]
 if s:transparent_background
     let s:tab_middle_bg = s:none
 else
-    let s:tab_middle_bg = s:background_alt
+    let s:tab_middle_bg = s:background
 endif
 
 let s:tab_l_fg = s:foreground
