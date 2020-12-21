@@ -11,6 +11,8 @@ let s:p = {'normal': {}, 'inactive': {}, 'insert': {}, 'replace': {}, 'visual': 
 
 let s:style = get(g:, 'tokyonight_style', 'night')
 
+let s:transparent_background = get(g:, 'tokyonight_transparent_background', 0)
+
 if s:style ==# 'night'
 	let s:foreground = [ '#a9b1d6', 250 ]
 	let s:background = [ '#1a1b26', 235 ]
@@ -32,9 +34,18 @@ elseif s:style ==# 'storm'
 	let s:blue = [ '#7AA2F7', 110 ]
 	let s:purple = [ '#ad8ee6', 176 ]
 endif
+
+let s:none = [ 'NONE', 'NONE' ]
 "}}}
 
 "{{{Definition
+
+if s:transparent_background
+    let s:tab_middle_bg = s:none
+else
+    let s:tab_middle_bg = s:background_alt
+endif
+
 let s:tab_l_fg = s:foreground
 let s:tab_l_bg = s:background_grey
 let s:tab_r_fg = s:red
@@ -42,7 +53,6 @@ let s:tab_r_bg = s:background_grey
 let s:tab_sel_fg = s:background
 let s:tab_sel_bg = s:red
 let s:tab_middle_fg = s:foreground
-let s:tab_middle_bg = s:background_alt
 
 let s:warningfg = s:background
 let s:warningbg = s:yellow
