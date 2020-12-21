@@ -1731,8 +1731,8 @@ endif
 highlight! link StartifyBracket Grey
 highlight! link StartifyFile Green
 highlight! link StartifyNumber Orange
-highlight! link StartifyPath Grey
-highlight! link StartifySlash Grey
+highlight! link StartifyPath Blue
+highlight! link StartifySlash Blue
 highlight! link StartifySection Blue
 highlight! link StartifyHeader Red
 highlight! link StartifySpecial Grey
