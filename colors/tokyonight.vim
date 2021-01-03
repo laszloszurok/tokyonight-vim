@@ -174,6 +174,7 @@ else
   call s:HL('SignColumn', s:palette.fg, s:palette.none)
   call s:HL('ToolbarLine', s:palette.fg, s:palette.bg2)
 endif
+call s:HL('FloatermBorder', s:palette.fg, s:palette.none)
 call s:HL('ColorColumn', s:palette.none, s:palette.bg1)
 call s:HL('Conceal', s:palette.grey, s:palette.none)
 if s:configuration.cursor ==# 'auto'
