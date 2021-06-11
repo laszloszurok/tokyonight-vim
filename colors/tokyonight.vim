@@ -45,6 +45,7 @@ if s:configuration.style ==# 'night'
         \ 'bg_blue':    ['#7da6ff',   '110',  'Blue'],
         \ 'diff_blue':  ['#3e5380',   '17',   'DarkBlue'],
         \ 'fg':         ['#a9b1d6',   '250',  'White'],
+        \ 'num_fg':     ['#6c6c6c',   '242',  'Grey'],
         \ 'red':        ['#F7768E',   '203',  'Red'],
         \ 'orange':     ['#FF9E64',   '215',  'Orange'],
         \ 'yellow':     ['#E0AF68',   '179',  'Yellow'],
@@ -69,6 +70,7 @@ elseif s:configuration.style ==# 'storm'
         \ 'bg_blue':    ['#7da6ff',   '110',  'Blue'],
         \ 'diff_blue':  ['#3e5380',   '17',   'DarkBlue'],
         \ 'fg':         ['#a9b1d6',   '250',  'White'],
+        \ 'num_fg':     ['#6c6c6c',   '242',  'Grey'],
         \ 'red':        ['#F7768E',   '203',  'Red'],
         \ 'orange':     ['#FF9E64',   '215',  'Orange'],
         \ 'yellow':     ['#E0AF68',   '179',  'Yellow'],
@@ -196,9 +198,9 @@ highlight! link lCursor Cursor
 highlight! link CursorIM Cursor
 call s:HL('CursorColumn', s:palette.none, s:palette.bg1)
 call s:HL('CursorLine', s:palette.none, s:palette.bg1)
-call s:HL('LineNr', s:palette.grey, s:palette.none)
+call s:HL('LineNr', s:palette.num_fg, s:palette.none)
 if &relativenumber == 1 && &cursorline == 0
-  call s:HL('CursorLineNr', s:palette.fg, s:palette.none)
+  call s:HL('CursorLineNr', s:palette.num_fg, s:palette.none)
 else
   call s:HL('CursorLineNr', s:palette.fg, s:palette.bg1)
 endif
