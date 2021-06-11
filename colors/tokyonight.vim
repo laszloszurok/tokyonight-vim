@@ -1579,7 +1579,7 @@ let g:fzf_colors = {
       \ 'bg': ['bg', 'Normal'],
       \ 'hl': ['fg', 'Green'],
       \ 'fg+': ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
-      \ 'bg+': ['bg', 'CursorLine', 'CursorColumn'],
+      \ 'bg+': ['-1', 'CursorLine', 'CursorColumn'],
       \ 'hl+': ['fg', 'Green'],
       \ 'info': ['fg', 'Yellow'],
       \ 'prompt': ['fg', 'Red'],
